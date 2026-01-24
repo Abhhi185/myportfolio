@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://abhinavp.github.io/my-portfolio",
+  "homepage": "https://abhi185.github.io/myportfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
