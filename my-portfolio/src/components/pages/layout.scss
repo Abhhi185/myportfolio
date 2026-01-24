@@ -1,51 +1,52 @@
-.layout-main-div {
-    background-color: lightgray;
-    border: 1px solid lightgrey;
-    margin: 15px;
-    border-radius: 10px;
-    height: 90vh;
-    width: 95vw;
-    padding: 20px;
+.layout-div {
+    width: 99vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
 
-    .layout-intenral-div {
-        background-color: lightblue;
-        height: 80vh;
-        width: 90vw;
-        border-radius: 10px;
-        padding: 30px;
-        margin: 15px;
-    }
 
-    .layout-internal-child-div {
-        background-color: white;
-        height: 60vh;
-        margin: 50px;
-        width: 80vw;
-        padding: 25px;
+    .layout-main-div {
+        background-color: lightgray;
+        border: 1px solid lightgrey;
         border-radius: 10px;
+        padding: 40px;
+        overflow: hidden;
+
+        .layout-intenral-div {
+            background-color: lightblue;
+            border-radius: 35px;
+            padding: 40px;
+        }
+
+        .layout-internal-child-div {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            position: relative;
+        }
 
         .wave-background {
             position: absolute;
-            margin-top: 15px;
             top: 0;
             right: 0;
             width: 100%;
             height: 100%;
             background: lightblue;
-            clip-path: path("M 0 100 Q 100 0, 250 50 T 500 0 L 500 500 L 0 500 Z"
-                );
+            clip-path: path("M 0 100 Q 100 0, 250 50 T 500 0 L 500 500 L 0 500 Z");
             z-index: 1;
             border-radius: 10px;
         }
 
         .profile-img {
             position: relative;
-            margin-top: 10px;
             z-index: 2;
-            width: 40%;
+            width: 60%;
+            max-width: 250px;
             border-radius: 50%;
             object-fit: cover;
-            margin-top: 15px;
+            margin-left: auto;
         }
 
         h1 span {
@@ -53,34 +54,82 @@
             font-weight: 600;
         }
 
-        p {
-            color: #555;
-            font-size: 1rem;
-            max-width: 400px;
+        .description {
+            font-size: 0.95rem;
+            color: grey;
+            font-weight: 500;
+            display: block;
+            margin-top: 10px;
         }
 
         .buttons {
             margin-top: 20px;
         }
 
-        .description {
-            font-size: small;
-            color: grey;
+        .text-link {
+            color: black;
+            cursor: pointer;
             font-weight: 500;
+            text-decoration: underline;
 
+            &:hover {
+                color: #f4b400;
+            }
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .layout-internal-child-div {
+        padding: 20px !important;
+    }
+
+    .profile-img {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout-main-div {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .layout-intenral-div {
+        padding: 15px;
+    }
+
+    .layout-internal-child-div {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 65%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .text-link {
-        color: black;
-        cursor: pointer;
-        font-weight: 500;
-        text-decoration: underline;
+        font-size: 14px;
+    }
+}
 
-        &:hover {
-            color: #f4b400; // Bootstrap blue for hover
-            text-decoration: underline;
-        }
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
     }
 
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .profile-img {
+        width: 75%;
+    }
 }

@@ -77,21 +77,19 @@ export default function Contacts() {
           <FontAwesomeIcon icon={faMapMarkerAlt} className="info-icon" />
           <span>Hyderabad</span>
         </div>
-
         <div
           className={`info-item ${active === "phone" ? "active" : ""}`}
           onClick={() => handleClick("phone")}
         >
           <FontAwesomeIcon icon={faPhone} className="info-icon" />
-          <span>+91 733 73 73 71 724</span>
+          <span>+91 733 73 71 724</span>
         </div>
-
         <div
           className={`info-item ${active === "email" ? "active" : ""}`}
           onClick={() => handleClick("email")}
         >
           <FontAwesomeIcon icon={faEnvelope} className="info-icon" />
-          <span>hello@flowbase.com</span>
+          <span>abhinavpagadala2201@gmail.com</span>
         </div>
       </div>
 

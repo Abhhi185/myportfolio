@@ -48,6 +48,7 @@
 
     .social-icons {
         margin-top: 150px;
+
         svg {
             font-size: 1.5rem;
             color: #333;
@@ -63,6 +64,19 @@
         color: black;
         cursor: pointer;
         font-weight: 500;
+        text-decoration: underline;
+
+        &:hover {
+            color: #007bff; // Bootstrap blue for hover
+            text-decoration: underline;
+        }
+    }
+
+    .back-navigation {
+        color: black;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: large;
         text-decoration: underline;
 
         &:hover {

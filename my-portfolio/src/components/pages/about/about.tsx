@@ -21,7 +21,12 @@ export default function About() {
     <div className="about-main container py-5 d-flex flex-column align-items-center text-center text-md-start">
       {/* Top Navigation */}
       <nav className="about-nav d-flex justify-content-between align-items-center w-100 mb-5">
-        <h5 className="fw-bold">Abhinav Pagadala</h5>
+        <span
+          className="back-navigation d-flex justify-content-start"
+          onClick={() => handleNavigation("/")}
+        >
+          Back
+        </span>
         <div className="about-links d-flex gap-4">
           <span onClick={() => handleNavigation("/")}>
             <FontAwesomeIcon icon={faHome} />
@@ -31,7 +36,7 @@ export default function About() {
             <FontAwesomeIcon icon={faFolderOpen} />
             Projects
           </span>
-          <span onClick={() => handleNavigation("/contacts")}>
+          <span onClick={() => handleNavigation("/contact")}>
             <FontAwesomeIcon icon={faEnvelope} />
             Contact
           </span>
@@ -87,7 +92,7 @@ export default function About() {
       </div>
 
       {/* Footer */}
-      <p className="text-muted small mt-4 mb-0">© Abhinav Pagadala 2025</p>
+      <p className="text-muted small mt-4 mb-0">© Abhinav Pagadala 2026</p>
     </div>
   );
 }
