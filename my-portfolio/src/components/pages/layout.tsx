@@ -84,7 +84,7 @@ export default function Layout() {
                 </div>
 
                 <div className=""></div>
-                <img src="/coverImg.jfif" alt="profile" className="profile-img" />
+                <img src="myportfolio/coverImg.jfif" alt="profile" className="profile-img" />
               </div>
             </div>
           </div>

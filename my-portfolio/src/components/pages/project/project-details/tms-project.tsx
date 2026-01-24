@@ -30,7 +30,7 @@ export default function TmsProject() {
       <div className="project-content d-flex flex-column flex-md-row align-items-center mb-5">
         <div className="project-image mb-4 mb-md-0 me-md-5">
           <img
-            src="/project-1.png"
+            src="/myportfolio/project-1.png"
             alt="TMS Dashboard"
             className="img-fluid rounded-3 shadow-sm"
           />

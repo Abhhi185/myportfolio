@@ -58,7 +58,7 @@ export default function About() {
           </p>
           <button
             className="btn btn-warning text-dark fw-semibold"
-            onClick={() => window.open("/resume.pdf", "_blank")}
+            onClick={() => window.open("/myportfolio/resume.pdf", "_blank")}
           >
             Resume
           </button>
@@ -67,7 +67,7 @@ export default function About() {
         {/* Right Image */}
         <div className="about-image position-relative">
           <img
-            src="/myImg.jpg" // <-- replace with your image
+            src="/myportfolio/myImg.jpg" // <-- replace with your image
             alt="Profile"
             className="profile-img"
           />

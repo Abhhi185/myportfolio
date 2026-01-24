@@ -41,7 +41,7 @@ export default function Project() {
         </div>
         <div className="project-image">
           <img
-            src="/project-1.png"
+            src="/myportfolio/project-1.png"
             width={400}
             height={250}
             alt="Transportation Management System Dashboard"
@@ -53,7 +53,7 @@ export default function Project() {
       {/* === Project 2 === */}
       <div className="project-card d-flex flex-column flex-md-row mb-5 shadow-sm reverse">
         <div className="project-image">
-          <img src="/project-2.png" alt="AI Document Management System" />
+          <img src="/myportfolio/project-2.png" alt="AI Document Management System" />
         </div>
         <div className="project-text p-4 d-flex flex-column justify-content-center">
           <h4 className="fw-bold mb-3">AI-Powered Document Processing System</h4>
